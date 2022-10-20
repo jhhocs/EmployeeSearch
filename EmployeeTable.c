@@ -1,6 +1,6 @@
 #include <string.h> 
 #include <stdlib.h> 
-#include "employee.h"
+#include "Employee.h"
  
 Employee EmployeeTable[] =  
 { 
