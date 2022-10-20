@@ -1,5 +1,5 @@
 #include <string.h> 
-#include "employee.h" 
+#include "Employee.h" 
 
 PtrToEmployee searchEmployeeByNumber(PtrToConstEmployee ptr, int tableSize, long targetNumber){ 
     const PtrToConstEmployee endPtr = ptr + tableSize; 
@@ -37,7 +37,7 @@ PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int tableSize, doub
     const PtrToConstEmployee endPtr = ptr + tableSize; 
     for(; ptr < endPtr; ptr++) 
     { 
-        if(ptr->salary ==targetSalary == 0) 
+        if(ptr->salary == targetSalary) 
             return (PtrToEmployee) ptr; 
     } 
     return NULL; 
