@@ -10,7 +10,9 @@ int main(void){
     //defined in employeeSearchOne.c 
     PtrToEmployee searchEmployeeByNumber(const Employee table[], int sizeTable, long numberToFind); 
     PtrToEmployee searchEmployeeByName(const Employee table[], int sizeTable, char * nameToFind); 
-
+    PtrToEmployee searchEmployeeByPhoneNumber(const Employee table[], int sizeTable, char * phoneNumberToFind); 
+    PtrToEmployee searchEmployeeBySalary(const Employee table[], int sizeTable, double salaryToFind); 
+    
     //defined in employeeTable.c 
     extern Employee EmployeeTable[];     //extern tells computer that the it will be declared somewhere else
     extern const int EmployeeTableEntries;      
